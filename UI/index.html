@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRESOR.EXE — CHASSE AU TRESOR v0.0.0.13</title>
+  <link rel="stylesheet" href="css/cursed.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23000080'/><rect x='4' y='4' width='8' height='8' fill='%23ffd700'/></svg>" />
+</head>
+<body>
+<div class="desktop">
+  <div class="crt-overlay"></div>
+  <div class="glitch-overlay" id="glitch-fx"></div>
+
+  <!-- desktop icons -->
+  <div class="desktop-icons">
+    <div class="desk-icon" id="icon-pc">
+      <i class="px px-pc"></i>
+      <span>My Computer</span>
+    </div>
+    <div class="desk-icon" id="icon-tresor">
+      <i class="px px-skull"></i>
+      <span>TRESOR.EXE</span>
+    </div>
+    <div class="desk-icon">
+      <i class="px px-bin"></i>
+      <span>Recycle Bin</span>
+    </div>
+    <div class="desk-icon" data-goto="gallery">
+      <i class="px px-cd"></i>
+      <span>components.dir</span>
+    </div>
+  </div>
+
+  <!-- prototype helper -->
+  <div class="win proto-hint" data-drag>
+    <div class="titlebar">
+      <span class="titlebar-text">art_direction.txt</span>
+      <div class="titlebar-controls">
+        <button class="win-btn tb-btn" type="button">_</button>
+        <button class="win-btn tb-btn close" type="button">X</button>
+      </div>
+    </div>
+    <div class="win-body">
+      Direction visuelle v1 — pas un build final.<br />
+      <b>Start</b> pour sauter d’écran.<br />
+      Double-clic <b>TRESOR.EXE</b> relance.
+    </div>
+  </div>
+
+  <div class="stage">
+
+    <!-- ========== ÉCRAN 1 BOOT ========== -->
+    <section class="screen stack" data-screen="boot">
+      <div class="win boot-win win--glitch" data-drag>
+        <div class="titlebar">
+          <i class="px sm px-skull titlebar-icon"></i>
+          <span class="titlebar-text">TRESOR.EXE — Setup</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn" type="button">_</button>
+            <button class="win-btn tb-btn" type="button">□</button>
+            <button class="win-btn tb-btn close" type="button">X</button>
+          </div>
+        </div>
+        <div class="win-body">
+          <div class="boot-logo-row">
+            <div class="boot-logo-mark">
+              <i class="px px-chest"></i>
+              CAT
+            </div>
+            <div class="boot-meta">
+              <h1 class="glitch" data-text="CURSED_APPLICATION.EXE">CURSED_APPLICATION.EXE</h1>
+              <div class="ver">version v0.0.0.13 &nbsp; build 13h37</div>
+              <div class="tiny">CHASSE AU TRESOR — a website AND a program AND a mistake</div>
+            </div>
+          </div>
+
+          <div class="boot-log" id="boot-log"></div>
+
+          <div class="progress suspect" aria-label="loading">
+            <div class="progress-fill" id="boot-fill"></div>
+            <div class="progress-label" id="boot-pct">0%</div>
+          </div>
+
+          <div class="boot-actions">
+            <button class="win-btn" type="button" id="btn-cancel">CANCEL</button>
+            <button class="win-btn primary" type="button" id="btn-skip">SKIP</button>
+          </div>
+          <div class="boot-copy">© 2003 Nullsoft Graveyard Inc. &nbsp; Not affiliated with Microsoft, on purpose.</div>
+        </div>
+      </div>
+
+      <div class="win win--error err-mini hidden" id="err-mini" data-drag>
+        <div class="titlebar">
+          <i class="px sm px-err titlebar-icon"></i>
+          <span class="titlebar-text">ERROR</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn" type="button" data-err-dismiss>X</button>
+          </div>
+        </div>
+        <div class="win-body">
+          <div class="msg">
+            <i class="px px-err"></i>
+            <div>
+              <b>ERROR 404: USER NOT FOUND</b>
+              <p id="err-mini-text">The application has detected that you are probably not supposed to be here.</p>
+            </div>
+          </div>
+          <div class="popup btns" style="display:flex;justify-content:flex-end;gap:8px">
+            <button class="win-btn" type="button" data-err-dismiss>OK</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ÉCRAN 2 HOMEPAGE ========== -->
+    <section class="screen" data-screen="home">
+      <div class="win ie-win" data-drag>
+        <div class="titlebar">
+          <i class="px sm px-pc titlebar-icon"></i>
+          <span class="titlebar-text">Internet Exploder — CHASSE AU TRESOR — Microsoft Internet Explorer</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn" type="button">_</button>
+            <button class="win-btn tb-btn" type="button">□</button>
+            <button class="win-btn tb-btn close" type="button">X</button>
+          </div>
+        </div>
+        <div class="ie-toolbar">
+          <button class="win-btn" type="button">Back</button>
+          <button class="win-btn is-disabled" type="button" disabled>Forward</button>
+          <button class="win-btn" type="button">Stop</button>
+          <button class="win-btn" type="button" data-goto="home">Refresh</button>
+          <button class="win-btn" type="button">Home</button>
+          <span class="tiny" style="margin-left:auto">♪ now playing: treasure_midi.mid</span>
+        </div>
+        <div class="addr">
+          <label>Address</label>
+          <input value="http://www.chasse-au-tresor.free.fr/index.html" readonly />
+        </div>
+        <div class="homepage">
+          <div class="hp-banner">
+            <div class="best-viewed">BEST VIEWED AT<br />800×600<br />IE6</div>
+            <h1>WELCOME TO MY WEBSITE!!!</h1>
+            <h2>THE BEST WEBSITE ON THE INTERNET SINCE 2003</h2>
+            <div class="counter-row">
+              <span style="font-family:var(--mono);font-size:16px;color:#0f0">VISITORS:</span>
+              <div class="visitor-counter" id="counter" aria-label="visitor counter">
+                <span class="d">0</span><span class="d">0</span><span class="d">0</span><span class="d">1</span><span class="d">3</span><span class="d">3</span><span class="d">7</span>
+              </div>
+              <span class="you-are blink" id="you-are">YOU ARE VISITOR #1338</span>
+            </div>
+          </div>
+
+          <div class="marquee-wrap"><span>★ SIGN MY GUESTBOOK ★ FREE MEMES ★ UNDER CONSTRUCTION SINCE 2003 ★ DO NOT GIVE THIS APP YOUR CREDIT CARD ★ YOU HAVE BEEN SELECTED ★</span></div>
+
+          <div class="hp-grid" style="margin-top:8px">
+            <aside class="hp-col">
+              <h3>NAVIGATION</h3>
+              <div class="nav-stack">
+                <button class="win-btn primary" type="button" data-goto="game">START</button>
+                <button class="win-btn" type="button">MEMES</button>
+                <button class="win-btn" type="button" data-goto="game">PUZZLES</button>
+                <button class="win-btn" type="button" data-goto="game">GAMES</button>
+                <button class="win-btn" type="button">GUESTBOOK</button>
+                <button class="win-btn" type="button">DOWNLOAD</button>
+                <button class="win-btn mystery" type="button" id="nav-mystery">???</button>
+              </div>
+              <div class="webring">← prev | webring | next →</div>
+            </aside>
+
+            <main class="hp-col">
+              <div class="hero-photo" aria-label="meme placeholder">
+                <svg class="hero-svg" viewBox="0 0 320 170" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+                  <rect width="320" height="170" fill="#1a0e0e"/>
+                  <rect x="40" y="18" width="160" height="110" fill="#3a3a3a"/>
+                  <rect x="48" y="24" width="144" height="90" fill="#0a2020"/>
+                  <rect x="70" y="40" width="100" height="50" fill="#0f3" opacity=".3"/>
+                  <rect x="170" y="88" width="90" height="55" fill="#6b3a12"/>
+                  <rect x="170" y="70" width="90" height="24" fill="#8b5a2b"/>
+                  <rect x="168" y="88" width="94" height="8" fill="#ffd700"/>
+                  <rect x="208" y="94" width="10" height="10" fill="#222"/>
+                  <rect x="20" y="140" width="40" height="12" fill="#444"/>
+                  <text x="12" y="14" fill="#0f0" font-size="8" font-family="monospace">IMG_0047.jpg  12kb</text>
+                </svg>
+                <div class="jpg-noise"></div>
+                <div class="hero-caption">photo.jpg — do not right-click</div>
+              </div>
+              <h2 class="center-title">CHASSE AU TRESOR</h2>
+              <p class="center-quote">“You have been selected for absolutely no reason.”</p>
+              <div class="cta-row">
+                <button class="win-btn primary" type="button" id="btn-start-xp">START THE EXPERIENCE</button>
+              </div>
+              <div class="deco-row">
+                <i class="px px-smile" title="smiley pixel"></i>
+                <div class="uc-sign">
+                  <span class="worker"></span>
+                  UNDER<br />CONSTRUCTION
+                </div>
+                <i class="px px-star" title="étoile"></i>
+                <span class="midi">GIF.gif</span>
+                <div class="meme-banner"><span>NEW!!!</span></div>
+              </div>
+            </main>
+
+            <aside class="hp-col">
+              <h3>HOT LINKS!!!</h3>
+              <div class="hot-links">
+                <a href="#">FREE MEMES</a>
+                <a href="#" class="sus">DEFINITELY SAFE DOWNLOAD</a>
+                <a href="#" data-goto="gallery">SECRET PAGE</a>
+                <a href="#" class="sus" id="link-donot">DO NOT CLICK</a>
+                <a href="#" class="glow" id="link-robux">CLICK HERE FOR FREE ROBUX</a>
+              </div>
+              <hr class="winhr" />
+              <div class="fake-ad blink-border">
+                <h3>CONGRATULATIONS!!!</h3>
+                <p>YOU WON NOTHING!</p>
+                <button class="win-btn shitpost" type="button" id="claim-nothing">CLAIM NOTHING</button>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <div class="status-bar">
+          <div class="status-chunk">Internet zone</div>
+          <div class="status-chunk">Done, probably</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ÉCRAN 3 GAME ========== -->
+    <section class="screen" data-screen="game">
+      <div class="win game-win" data-drag>
+        <div class="titlebar">
+          <i class="px sm px-skull titlebar-icon"></i>
+          <span class="titlebar-text">CURSED_APP.EXE</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn" type="button">_</button>
+            <button class="win-btn tb-btn" type="button">□</button>
+            <button class="win-btn tb-btn close" type="button">X</button>
+          </div>
+        </div>
+        <div class="win-body" style="height:calc(100% - 46px);display:flex;flex-direction:column">
+          <div class="game-layout">
+            <div class="playfield">
+              <div class="objective">
+                <span>OBJECTIVE: find the treasure. do not trust the X.</span>
+                <span class="hint" id="obj-hint">click a mark, then DIG</span>
+              </div>
+              <div class="map-wrap" aria-label="zone de jeu">
+                <svg class="map-svg" viewBox="0 0 560 300" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="560" height="300" fill="#1a1408"/>
+                  <ellipse cx="280" cy="160" rx="210" ry="110" fill="#3d5a2a"/>
+                  <ellipse cx="280" cy="160" rx="180" ry="90" fill="#4a6b32"/>
+                  <rect x="90" y="150" width="40" height="8" fill="#6b5420"/>
+                  <polygon points="120,90 128,150 112,150" fill="#2d4a1e"/>
+                  <polygon points="400,100 410,160 390,160" fill="#2d4a1e"/>
+                  <path d="M140 180 C 200 200, 260 120, 340 170 S 430 210, 460 170" fill="none" stroke="#6b5420" stroke-width="3" stroke-dasharray="6 4"/>
+                  <rect x="70" y="200" width="36" height="14" fill="#5a4030"/>
+                  <text x="12" y="18" fill="#c8a44a" font-size="10" font-family="monospace">MAP_01.BMP  —  authenticity: dubious</text>
+
+                  <g class="hotspot" data-spot="x-red" transform="translate(200,120)">
+                    <rect x="-14" y="-14" width="28" height="28" fill="transparent"/>
+                    <text x="-7" y="8" fill="#c00" font-size="22" font-family="Comic Sans MS, cursive" font-weight="700">X</text>
+                  </g>
+                  <g class="hotspot" data-spot="x-skull" transform="translate(390,150)">
+                    <rect x="-14" y="-14" width="28" height="28" fill="transparent"/>
+                    <text x="-7" y="8" fill="#fff" font-size="22" font-family="Comic Sans MS, cursive">X</text>
+                  </g>
+                  <g class="hotspot" data-spot="trap" transform="translate(150,210)">
+                    <rect x="-14" y="-14" width="28" height="28" fill="transparent"/>
+                    <text x="-7" y="8" fill="#ff0" font-size="22" font-family="Comic Sans MS, cursive">X</text>
+                  </g>
+                  <g class="hotspot" data-spot="chest" transform="translate(330,200)">
+                    <rect x="-16" y="-16" width="32" height="32" fill="transparent"/>
+                    <rect x="-10" y="-2" width="20" height="12" fill="#8b4513"/>
+                    <rect x="-10" y="-8" width="20" height="8" fill="#a0522d"/>
+                    <rect x="-11" y="-2" width="22" height="3" fill="#ffd700"/>
+                  </g>
+                </svg>
+                <div class="map-legend">click a mark on the island</div>
+              </div>
+              <div class="play-actions">
+                <button class="win-btn primary" type="button" id="dig" disabled>DIG HERE</button>
+                <div class="progress prog-mini" aria-label="progression">
+                  <div class="progress-fill" id="game-prog" style="width:0%"></div>
+                  <div class="progress-label" id="game-prog-label">0 / 1</div>
+                </div>
+                <button class="win-btn" type="button" data-goto="popups">POP-UPS</button>
+              </div>
+            </div>
+            <aside class="sys-status" aria-label="system status">
+              <h3>SYSTEM STATUS</h3>
+              <div class="row"><span>MEME LOAD</span><span id="st-meme">73%</span></div>
+              <div class="sys-graph"><i id="st-meme-bar" style="width:73%"></i></div>
+              <div class="row"><span>INTERNET</span><span class="ok">YES</span></div>
+              <div class="row"><span>USER</span><span class="meh" id="st-user">???</span></div>
+              <div class="row"><span>REALITY</span><span class="meh" id="st-real">82%</span></div>
+              <div class="sys-graph"><i id="st-real-bar" style="width:82%"></i></div>
+              <div class="row"><span>ERRORS</span><span class="bad" id="st-err">04</span></div>
+              <hr class="winhr" />
+              <div class="tiny" style="color:#8f8">hint: the loudest X is never the treasure. the chest is smaller than your pride.</div>
+            </aside>
+          </div>
+        </div>
+        <div class="status-bar">
+          <div class="status-chunk ok">STATUS: probably safe</div>
+          <div class="status-chunk">VERSION 0.0.13</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ÉCRAN 4 POPUPS ========== -->
+    <section class="screen" data-screen="popups">
+      <div class="win popup-stage" data-drag>
+        <div class="titlebar">
+          <span class="titlebar-text">popup_museum.exe — examples</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn" type="button">_</button>
+            <button class="win-btn tb-btn" type="button">□</button>
+            <button class="win-btn tb-btn close" type="button">X</button>
+          </div>
+        </div>
+        <div class="win-body">
+          <div style="position:absolute;left:16px;top:12px;display:flex;gap:8px;z-index:2">
+            <button class="win-btn" type="button" id="demo-error">spawn ERROR</button>
+            <button class="win-btn" type="button" id="demo-congrats">spawn CONGRATS</button>
+            <button class="win-btn" type="button" data-goto="game">back to game</button>
+          </div>
+
+          <!-- static examples, always visible -->
+          <div class="win win--error popup" style="left:40px;top:56px" data-drag>
+            <div class="titlebar">
+              <i class="px sm px-err titlebar-icon"></i>
+              <span class="titlebar-text">ERROR</span>
+              <div class="titlebar-controls"><button class="win-btn tb-btn close" type="button">X</button></div>
+            </div>
+            <div class="win-body">
+              <div class="msg">
+                <i class="px px-err"></i>
+                <div>
+                  <b>ERROR 404: USER NOT FOUND</b>
+                  <p>The application has detected that you are probably not supposed to be here.</p>
+                </div>
+              </div>
+              <div class="btns">
+                <button class="win-btn" type="button" data-goto="game">OK</button>
+                <button class="win-btn" type="button" data-goto="game">OK</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="win popup congrats" style="left:400px;top:120px" data-drag>
+            <div class="titlebar">
+              <i class="px sm px-star titlebar-icon"></i>
+              <span class="titlebar-text">CONGRATULATIONS!!!</span>
+              <div class="titlebar-controls"><button class="win-btn tb-btn close" type="button">X</button></div>
+            </div>
+            <div class="win-body">
+              <h4>CONGRATULATIONS!!!</h4>
+              <p style="text-align:center;font-family:var(--times)">You have won absolutely nothing.</p>
+              <div class="btns" style="justify-content:center">
+                <button class="win-btn primary" type="button" data-goto="game">THANK YOU</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ÉCRAN 5 FAIL ========== -->
+    <section class="screen" data-screen="fail">
+      <div class="win fail-win win--error" data-drag>
+        <div class="titlebar">
+          <i class="px sm px-err titlebar-icon"></i>
+          <span class="titlebar-text">FATAL ERROR</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn close" type="button">X</button>
+          </div>
+        </div>
+        <div class="win-body">
+          <div style="display:flex;gap:10px;align-items:flex-start">
+            <i class="px lg px-err"></i>
+            <div>
+              <b>FATAL ERROR</b>
+              <p class="tiny" style="margin:4px 0 0">Something went wrong.<br />Probably your fault.</p>
+            </div>
+          </div>
+          <div class="fail-code">ERROR CODE: 0xDEADBEEF
+
+Something went wrong.
+Probably your fault.</div>
+          <div class="fail-actions">
+            <button class="win-btn primary" type="button" id="retry">RETRY</button>
+            <button class="win-btn" type="button" id="giveup">GIVE UP</button>
+            <button class="win-btn hot" type="button" id="donotpress">DO NOT PRESS</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ÉCRAN 6 WIN ========== -->
+    <section class="screen" data-screen="win">
+      <div class="win win-screen" data-drag>
+        <div class="titlebar">
+          <i class="px sm px-star titlebar-icon"></i>
+          <span class="titlebar-text">CONGRATULATIONS.SCR</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn" type="button">_</button>
+            <button class="win-btn tb-btn" type="button">□</button>
+            <button class="win-btn tb-btn close" type="button">X</button>
+          </div>
+        </div>
+        <div class="win-body win-hero">
+          <div class="confetti" aria-hidden="true">
+            <i style="left:8%;background:#f0f;animation-delay:0s"></i>
+            <i style="left:18%;background:#ff0;animation-delay:.2s"></i>
+            <i style="left:28%;background:#0ff;animation-delay:.4s"></i>
+            <i style="left:40%;background:#0f0;animation-delay:.1s"></i>
+            <i style="left:55%;background:#f00;animation-delay:.3s"></i>
+            <i style="left:68%;background:#00f;animation-delay:.5s"></i>
+            <i style="left:80%;background:#ff0;animation-delay:.15s"></i>
+            <i style="left:90%;background:#f0f;animation-delay:.35s"></i>
+          </div>
+          <h1>CONGRATULATIONS!!!</h1>
+          <p>YOU ACTUALLY DID IT.</p>
+          <p>Nobody knows how.</p>
+          <div class="badge">OFFICIAL BADGE<br />CERTIFIED TREASURE PERSON</div>
+          <div style="margin:8px 0">
+            <div class="visitor-counter" aria-hidden="true">
+              <span class="d">W</span><span class="d">I</span><span class="d">N</span><span class="d">N</span><span class="d">E</span><span class="d">R</span>
+            </div>
+          </div>
+          <div class="midi" style="display:inline-block">GIF placeholder ★ you.gif</div>
+          <p class="tiny" id="save-msg" style="min-height:14px"></p>
+          <div class="win-actions">
+            <button class="win-btn primary" type="button" id="btn-continue">CONTINUE</button>
+            <button class="win-btn" type="button" id="btn-save">SAVE</button>
+            <button class="win-btn" type="button" id="btn-nobody">TELL NOBODY</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMPONENT GALLERY ========== -->
+    <section class="screen" data-screen="gallery">
+      <div class="win gallery-win">
+        <div class="titlebar">
+          <span class="titlebar-text">COMPONENT LIBRARY — Figma-less, still a system</span>
+          <div class="titlebar-controls">
+            <button class="win-btn tb-btn" type="button">_</button>
+            <button class="win-btn tb-btn" type="button">□</button>
+            <button class="win-btn tb-btn close" type="button" data-goto="home">X</button>
+          </div>
+        </div>
+        <div class="gallery-body">
+          <div class="swatch">
+            <h4>Window</h4>
+            <div class="win">
+              <div class="titlebar"><span class="titlebar-text">Untitled</span>
+                <div class="titlebar-controls">
+                  <button class="win-btn tb-btn" type="button">_</button>
+                  <button class="win-btn tb-btn" type="button">□</button>
+                  <button class="win-btn tb-btn" type="button">X</button>
+                </div>
+              </div>
+              <div class="win-body">body</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>Window / Error</h4>
+            <div class="win win--error">
+              <div class="titlebar"><i class="px sm px-err titlebar-icon"></i><span class="titlebar-text">Error</span></div>
+              <div class="win-body" style="display:flex;gap:8px"><i class="px px-err"></i> something broke</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>Window / Warning</h4>
+            <div class="win win--warn">
+              <div class="titlebar"><i class="px sm px-warn titlebar-icon"></i><span class="titlebar-text">Warning</span></div>
+              <div class="win-body" style="display:flex;gap:8px"><i class="px px-warn"></i> reality.dll</div>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>Button / states</h4>
+            <div class="row">
+              <button class="win-btn" type="button">Normal</button>
+              <button class="win-btn is-hover" type="button">Hover</button>
+              <button class="win-btn is-pressed" type="button">Pressed</button>
+              <button class="win-btn is-disabled" type="button" disabled>Disabled</button>
+              <button class="win-btn primary" type="button">Primary</button>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>Progress Bar</h4>
+            <div class="progress suspect"><div class="progress-fill" style="width:99%"></div><div class="progress-label">99%</div></div>
+          </div>
+          <div class="swatch">
+            <h4>Scrollbar</h4>
+            <div class="scroll-demo">
+              <div class="scroll-demo-body">content that is too long on purpose because 2003</div>
+              <div class="win-scroll">
+                <button class="win-btn sb-btn" type="button">▲</button>
+                <div class="sb-track"><div class="sb-thumb"></div></div>
+                <button class="win-btn sb-btn" type="button">▼</button>
+              </div>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>System Status</h4>
+            <div class="sys-status" style="height:auto">
+              <h3>SYSTEM STATUS</h3>
+              <div class="row"><span>MEME LOAD</span><span>73%</span></div>
+              <div class="row"><span>USER</span><span class="meh">???</span></div>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>Visitor Counter</h4>
+            <div class="visitor-counter"><span class="d">0</span><span class="d">0</span><span class="d">0</span><span class="d">1</span><span class="d">3</span><span class="d">3</span><span class="d">7</span></div>
+          </div>
+          <div class="swatch">
+            <h4>Fake Advertisement</h4>
+            <div class="fake-ad"><h3>CONGRATULATIONS!!!</h3><p>YOU WON NOTHING!</p><button class="win-btn shitpost" type="button">CLAIM NOTHING</button></div>
+          </div>
+          <div class="swatch">
+            <h4>Meme Banner</h4>
+            <div class="meme-banner"><span>NEW!!!</span> BEST WEBSITE 2003</div>
+          </div>
+          <div class="swatch">
+            <h4>Notification</h4>
+            <div class="notification"><i class="px sm px-info"></i><div><strong>MSN</strong>A friend has come online. They are not your friend.</div></div>
+          </div>
+          <div class="swatch">
+            <h4>Glitch Overlay</h4>
+            <div style="position:relative;height:48px;background:#008080">
+              <div class="glitch-overlay on" style="opacity:1"></div>
+              <span class="glitch" data-text="TRESOR.EXE" style="color:#fff;padding:12px">TRESOR.EXE</span>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>Pixel Icon</h4>
+            <div class="row">
+              <i class="px px-skull"></i>
+              <i class="px px-chest"></i>
+              <i class="px px-pc"></i>
+              <i class="px px-bin"></i>
+              <i class="px px-warn"></i>
+              <i class="px px-err"></i>
+              <i class="px px-star"></i>
+              <i class="px px-smile"></i>
+              <i class="px px-cd"></i>
+            </div>
+          </div>
+          <div class="swatch">
+            <h4>Popup</h4>
+            <p class="tiny">Voir écran 4 — deux OK identiques, jamais bloquant.</p>
+            <button class="win-btn" type="button" data-goto="popups">open museum</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- live popup layer (over game) -->
+  <div class="popup-layer" id="popup-layer"></div>
+
+  <div class="hidden" id="popup-templates">
+    <template id="tpl-error">
+      <div class="win win--error popup">
+        <div class="titlebar">
+          <i class="px sm px-err titlebar-icon"></i>
+          <span class="titlebar-text">ERROR</span>
+          <div class="titlebar-controls"><button class="win-btn tb-btn close" type="button" data-close>X</button></div>
+        </div>
+        <div class="win-body">
+          <div class="msg">
+            <i class="px px-err"></i>
+            <div>
+              <b>ERROR 404: USER NOT FOUND</b>
+              <p>The application has detected that you are probably not supposed to be here.</p>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="win-btn" type="button" data-close>OK</button>
+            <button class="win-btn" type="button" data-close>OK</button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template id="tpl-congrats">
+      <div class="win popup congrats">
+        <div class="titlebar">
+          <i class="px sm px-star titlebar-icon"></i>
+          <span class="titlebar-text">CONGRATULATIONS!!!</span>
+          <div class="titlebar-controls"><button class="win-btn tb-btn close" type="button" data-close>X</button></div>
+        </div>
+        <div class="win-body">
+          <h4>CONGRATULATIONS!!!</h4>
+          <p style="text-align:center;font-family:'Times New Roman',Times,serif">You have won absolutely nothing.</p>
+          <div class="btns" style="justify-content:center">
+            <button class="win-btn primary" type="button" data-close>THANK YOU</button>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+
+  <!-- taskbar -->
+  <div class="taskbar">
+    <button class="win-btn start-btn" type="button" id="start">
+      <span class="start-logo"></span> Start
+    </button>
+    <button class="win-btn task-btn is-active" type="button" data-screen="boot" data-goto="boot">TRESOR.EXE</button>
+    <button class="win-btn task-btn" type="button" data-screen="home" data-goto="home">www.chasse-au-tresor.free.fr</button>
+    <button class="win-btn task-btn" type="button" data-screen="game" data-goto="game">CURSED_APP.EXE</button>
+    <div class="tray">
+      <span class="tray-dot" title="internet: yes"></span>
+      <span id="clock">12:04 AM</span>
+    </div>
+  </div>
+
+  <div class="start-menu" id="start-menu">
+    <div class="start-menu-stripe">CHASSE AU TRESOR</div>
+    <div class="start-menu-list">
+      <div class="start-item" data-goto="boot"><i class="px sm px-cd"></i> 1 · Faux lancement <kbd>1</kbd></div>
+      <div class="start-item" data-goto="home"><i class="px sm px-pc"></i> 2 · Homepage <kbd>2</kbd></div>
+      <div class="start-item" data-goto="game"><i class="px sm px-chest"></i> 3 · Application / jeu <kbd>3</kbd></div>
+      <div class="start-item" data-goto="popups"><i class="px sm px-err"></i> 4 · Pop-ups <kbd>4</kbd></div>
+      <div class="start-item" data-goto="fail"><i class="px sm px-warn"></i> 5 · Échec <kbd>5</kbd></div>
+      <div class="start-item" data-goto="win"><i class="px sm px-star"></i> 6 · Succès <kbd>6</kbd></div>
+      <hr class="winhr" />
+      <div class="start-item" data-goto="gallery"><i class="px sm px-smile"></i> Bibliothèque de composants</div>
+    </div>
+  </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

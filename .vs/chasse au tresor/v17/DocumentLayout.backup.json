@@ -1,0 +1,216 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\chasse au tresor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\chasse au tresor\\assets\\scripts\\minigames\\mazeexit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigames\\mazeexit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\chasse au tresor\\assets\\scripts\\minigames\\mazewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigames\\mazewall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\assets\\scripts\\minigames\\scarymazecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\minigames\\scarymazecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C28043A-ABEF-B060-2E82-3E36A04F044A}|Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{2C28043A-ABEF-B060-2E82-3E36A04F044A}|Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj|solutionrelative:server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\chasse au tresor\\backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\assets\\scripts\\authentication\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\authentication\\loginui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\assets\\scripts\\backend\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\backend\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\assets\\scripts\\authentication\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\authentication\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\assets\\scripts\\core\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\assets\\scripts\\authentication\\registerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B1D4B88-6FB1-75B4-60AB-619805FE6CA3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\authentication\\registerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication.meta||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Authentication.meta||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C878670B-64C0-BE82-0782-EB6368908EB9}|Assembly-CSharp-Editor.csproj|C:\\Users\\User\\Documents\\chasse au tresor\\assets\\editor\\createloginscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C878670B-64C0-BE82-0782-EB6368908EB9}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\createloginscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MazeExit.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\MiniGames\\MazeExit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MiniGames\\MazeExit.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\MiniGames\\MazeExit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MiniGames\\MazeExit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T11:19:42.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MazeWall.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\MiniGames\\MazeWall.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MiniGames\\MazeWall.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\MiniGames\\MazeWall.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MiniGames\\MazeWall.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T11:18:36.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScaryMazeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\MiniGames\\ScaryMazeController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MiniGames\\ScaryMazeController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\MiniGames\\ScaryMazeController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MiniGames\\ScaryMazeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T11:07:22.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\server.js",
+              "RelativeDocumentMoniker": "server.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\server.js",
+              "RelativeToolTip": "server.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-23T10:56:55.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateLoginScene.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Editor\\CreateLoginScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Editor\\CreateLoginScene.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Editor\\CreateLoginScene.cs",
+              "RelativeToolTip": "Assets\\Editor\\CreateLoginScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T10:52:46.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\backend\\server.js",
+              "RelativeDocumentMoniker": "backend\\server.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\backend\\server.js",
+              "RelativeToolTip": "backend\\server.js",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-09-23T10:39:04.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginUI.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication\\LoginUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Authentication\\LoginUI.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication\\LoginUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Authentication\\LoginUI.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T10:36:40.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication\\AuthManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Authentication\\AuthManager.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication\\AuthManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Authentication\\AuthManager.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T03:36:15.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SceneLoader.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Core\\SceneLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SceneLoader.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Core\\SceneLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\SceneLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T03:27:42.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterUI.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication\\RegisterUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Authentication\\RegisterUI.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication\\RegisterUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Authentication\\RegisterUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T03:25:49.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Backend\\ApiClient.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Backend\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Backend\\ApiClient.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Backend\\ApiClient.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAFkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T03:22:16.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Authentication.meta",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication.meta",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Authentication.meta",
+              "ToolTip": "C:\\Users\\User\\Documents\\chasse au tresor\\Assets\\Scripts\\Authentication.meta",
+              "RelativeToolTip": "Assets\\Scripts\\Authentication.meta",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-23T03:20:24.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
